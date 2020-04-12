@@ -6,9 +6,12 @@ public class rollercoaster {
 	public static void main(String[] args) {
 String nw =	JOptionPane.showInputDialog(null, "what height are you in inches?");	
 int nwInt=Integer.parseInt(nw);
-if(nwInt==48) {
+if(nwInt<48) {
 	JOptionPane.showMessageDialog(null,"you need to grow first");
 	
+}
+else {
+	JOptionPane.showMessageDialog(null, "you are allowed to go on this ride");
 }
 	}
 
