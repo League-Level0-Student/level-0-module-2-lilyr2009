@@ -10,6 +10,14 @@ import javax.swing.JOptionPane;
  */
 public class VotingBooth {
 	public static void main(String[] args) {
-JOptionPane.showInputDialog(null,"how old are you?");
+String num=JOptionPane.showInputDialog(null,"how old are you?");
+int numInt=Integer.parseInt(num);
+if(numInt<18) {
+JOptionPane.showMessageDialog(null, "you are too young");
+
+}
+else {
+	JOptionPane.showMessageDialog(null, "you can vote");	
+}
 }
 }
